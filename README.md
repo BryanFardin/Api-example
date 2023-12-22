@@ -69,8 +69,8 @@ Aqui estão alguns exemplos de como fazer requisições à API:
 	"id":121,
 	"nome":"CentroCar",
 	"modelo":{"Fiat":"Uno"},
-	"atributos":{"Cor":"Branco","Portas":2}
-}' http://localhost:3000/api
+	"atributos":{"Cor":"Branco","Portas":2}}'
+    http://localhost:3000/api
     ```
 
 ## Configuração
