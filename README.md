@@ -1,6 +1,7 @@
 # API
 
 Uma API desenvolvida para Portifolio.
+Cria um objeto concessionaria com nome, id, carros e atributo dos carros disponiveis e salva em um banco de dados.
 
 ## Índice
 
