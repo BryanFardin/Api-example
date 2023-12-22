@@ -46,23 +46,30 @@ Esta API fornece endpoints simples para realizar operações. Certifique-se de e
 
 ## Endpoints
 
-- `GET /api`: Retorna uma lista de requests.
-- `POST /api`: Adiciona um novo request.
-
+- `GET /api`: Retorna uma lista de concessionarias.
+- `GET /api/:id`: Retorna uma unica concessionaria.
+- `POST /api`: Adiciona uma nova concessionaria.
+- `PUT /api/:id`: Atualiza uma concessionaria.
+- `DELETE /api/:id`: Adiciona uma concessionaria.
 ## Exemplos de Requisições
 
 Aqui estão alguns exemplos de como fazer requisições à API:
 
-- Obter Requests:
+- Obter todas concessionarias:
 
     ```bash
     curl -X GET http://localhost:3000/api
     ```
 
-- Adicionar um novo Request:
+- Adicionar uma nova concessionaria:
 
     ```bash
-    curl -X POST -H "Content-Type: application/json" -d '[{"setorId":1,"conjuntoId":0,"checkboxesState":{"7001A":true,"7001B":false},"atributos":{"7001A":{"Pressao":"43","Temperatura":"34","Cheiro":"4"},"7001B":{}}}]' http://localhost:3000/api
+    curl -X POST -H "Content-Type: application/json" -d '{
+	"id":121,
+	"nome":"CentroCar",
+	"modelo":{"Fiat":"Uno"},
+	"atributos":{"Cor":"Branco","Portas":2}
+}' http://localhost:3000/api
     ```
 
 ## Configuração
